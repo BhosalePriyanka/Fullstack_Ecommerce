@@ -14,7 +14,7 @@ const{token} = useParams()
 console.log(token)
 const navigate = useNavigate()
 const handlePassword = async() => {
-     const response = await fetch(`http://localhost:4000/api/user/passwordLink/${token}`,{
+     const response = await fetch(`https://fullstack-ecommerce-backend.onrender.com/api/user/passwordLink/${token}`,{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(state)

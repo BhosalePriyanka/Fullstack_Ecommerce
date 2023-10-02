@@ -31,7 +31,7 @@ console.log(user)
 
 
 const handleSubmit = async()=>{
-const response = await fetch('http://localhost:4000/api/product',{
+const response = await fetch('https://fullstack-ecommerce-backend.onrender.com/api/product',{
             method : 'POST',
             body : JSON.stringify(state),
             headers:{
