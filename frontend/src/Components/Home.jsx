@@ -2,10 +2,10 @@ import React from 'react';
 import img from '../Image/img1.webp';
 import img2 from '../Image/img2.jpeg';
 import img3 from '../Image/img3.jpeg';
-import {small , Carousel} from 'react-bootstrap';
+import {Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useSelector} from 'react-redux'
-import { useEffect } from 'react';
+
 
 function Home(){
   const user = useSelector(state=>state.login.login)
@@ -30,6 +30,7 @@ return(
     <img className="d-block w-100  pe-none" src = {img3} alt="Third slide"/>
   </Carousel.Item>
 </Carousel>
+
 </div>
 </>
 );

@@ -113,7 +113,8 @@ connection.query('select * from USER where BINARY EMAIL = ? ',[email],(err,resul
          return jwt.sign({email},process.env.secret,{expiresIn:'5m'})
       }
       const token = createToken(email)
-      const link = `https://fullstack-ecommerce-frontend.onrender.com/Password/${token}`
+      // const link = `https://fullstack-ecommerce-frontend.onrender.com/Password/${token}`
+      const link = `http://localhost:3000/Password/${token}`
       var transporter = nodemailer.createTransport({
          service: 'gmail',
          auth: {

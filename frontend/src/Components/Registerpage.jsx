@@ -21,7 +21,7 @@ const handleChange = (event) => {
 		});
 	}
 const handleSubmit = async()=>{
-	const response = await fetch('https://fullstack-ecommerce-backend.onrender.com/api/user/signup',{
+		const response = await fetch('http://localhost:4000/api/user/signup',{
 		method : 'POST',
 		headers : {
 			'Content-Type' : 'application/json'

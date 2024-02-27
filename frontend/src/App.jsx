@@ -18,7 +18,7 @@ import {useSelector} from 'react-redux';
 import Password from './Components/Password';
 import Reset from './Components/Reset';
 
-
+const LazyAbout = React.lazy(()=> import('./Components/Cart'))
 
 
 function App() {

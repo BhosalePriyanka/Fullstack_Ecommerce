@@ -10,7 +10,7 @@ function Reset() {
 const[error,setError] = useState('')
 
 const handleSend = async() => {
-     const response = await fetch('https://fullstack-ecommerce-backend.onrender.com/api/user/reset',{
+      const response = await fetch('http://localhost:4000/api/user/reset',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(state)

@@ -23,7 +23,7 @@ const handleChange = (event) => {
 	}
 
 const handleLogin = async() => {
-const response = await fetch('https://fullstack-ecommerce-backend.onrender.com/api/user/login',{
+	const response = await fetch('http://localhost:4000/api/user/login',{
 	method:'POST',
 	headers:{
 		'Content-Type':'application/json'
@@ -46,7 +46,7 @@ if(!jsonData.error){
 
 const handelGoogleLogin = async(credentialResponse)=>{
 	var decoded = jwt_decode(credentialResponse.credential);
-	const response = await fetch('https://fullstack-ecommerce-backend.onrender.com/api/user/googleLogin',{
+	const response = await fetch('http://localhost:4000/api/user/googleLogin',{
 	method:'POST',
 	headers:{
 		'Content-Type':'application/json'
